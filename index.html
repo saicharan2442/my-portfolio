@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saicharan Sada | AI & Data Science Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #1e40af;
+            --accent: #3b82f6;
+            --light: #f8fafc;
+            --dark: #1e293b;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+                       target="_blank" 
+                       class="inline-block text-blue-600 hover:text-blue-800 font-medium">
+                        View Certificate <i class="fas fa-external-link-alt ml-1"></
+</html>
+9    <style>
+What do you want to ask AI next?
+
+REQUIRED
+Login with Hugging Face
+You reached the limit of free AI usage. Please login to continue.
+
+Sign in with Hugging Face
+$0
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .skill-pill {
+            transition: all 0.2s ease;
+        }
+        
+        .skill-pill:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--primary);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .floating-btn {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .profile-img {
+            border: 5px solid white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .profile-img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--primary);
+        }
+        
+        .badge-icon {
+            transition: all 0.3s ease;
+        }
+        
+        .badge-icon:hover {
+            transform: scale(1.1);
+            filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.2));
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold text-blue-600">Saicharan Sada</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-blue-600">Home</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-blue-600">About</a>
+                    <a href="#projects" class="nav-link text-gray-700 hover:text-blue-600">Projects</a>
+                    <a href="#experience" class="nav-link text-gray-700 hover:text-blue-600">Experience</a>
+                    <a href="#certifications" class="nav-link text-gray-700 hover:text-blue-600">Certifications</a>
+                    <a href="#education" class="nav-link text-gray-700 hover:text-blue-600">Education</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-blue-600">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-gray-700 hover:text-blue-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100">Home</a>
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100">About</a>
+                <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100">Projects</a>
+                <a href="#experience" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100">Experience</a>
+                <a href="#certifications" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100">Certifications</a>
+                <a href="#education" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100">Education</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 pb-16 md:pt-32 md:pb-24 gradient-bg text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Saicharan Sada</h1>
+                    <h2 class="text-xl md:text-2xl mb-6 font-light">AI Enthusiast | Data Scientist | Prompt Engineer</h2>
+                    <p class="text-lg mb-8 max-w-lg">Passionate about leveraging artificial intelligence and data science to solve real-world problems and create impactful solutions.</p>
+                    <a href="#projects" class="inline-block bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition duration-300 shadow-lg">
+                        View My Projects <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="https://media.licdn.com/dms/image/v2/D5603AQG3V26axHJgKA/profile-displayphoto-shrink_400_400/B56ZQh2J3sHIAg-/0/1735734633671?e=1752710400&v=beta&t=4e5zjLSE4SS7Wvz5e2ZdsklKk6BO7JaNVR6GE-75jUI" 
+                         alt="Saicharan Sada" 
+                         class="profile-img rounded-full w-64 h-64 md:w-80 md:h-80 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-12 text-center section-title">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
+                    <img src="https://media.licdn.com/dms/image/v2/D5603AQG3V26axHJgKA/profile-displayphoto-shrink_400_400/B56ZQh2J3sHIAg-/0/1735734633671?e=1752710400&v=beta&t=4e5zjLSE4SS7Wvz5e2ZdsklKk6BO7JaNVR6GE-75jUI" 
+                         alt="Saicharan Sada" 
+                         class="rounded-lg shadow-xl w-64 h-64 object-cover">
+                </div>
+                <div class="md:w-2/3 md:pl-12">
+                    <h3 class="text-2xl font-semibold mb-4">Hello, I'm Saicharan</h3>
+                    <p class="text-gray-600 mb-6">
+                        I'm a passionate student of Artificial Intelligence and Data Science from Srikakulam, Andhra Pradesh. 
+                        With a strong foundation in machine learning, data analysis, and software development, I'm dedicated 
+                        to creating innovative solutions that leverage cutting-edge technologies.
+                    </p>
+                    <div class="mb-6">
+                        <h4 class="text-lg font-medium mb-3">Education</h4>
+                        <p class="text-gray-700">
+                            <i class="fas fa-graduation-cap text-blue-500 mr-2"></i>
+                            B.Tech in AI & Data Science at Miracle.edu (2021–2025) - 76%
+                        </p>
+                    </div>
+                    <div class="mb-6">
+                        <h4 class="text-lg font-medium mb-3">Location</h4>
+                        <p class="text-gray-700">
+                            <i class="fas fa-map-marker-alt text-blue-500 mr-2"></i>
+                            Srikakulam, Andhra Pradesh, India
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-medium mb-3">Skills</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-pill bg-gray-100 px-3 py-1 rounded-full text-sm">Python</span>
+                            <span class="skill-pill bg-gray-100 px-3 py-1 rounded-full text-sm">Machine Learning</span>
+                            <span class="skill-pill bg-gray-100 px-3 py-1 rounded-full text-sm">Data Science</span>
+                            <span class="skill-pill bg-gray-100 px-3 py-1 rounded-full text-sm">AI</span>
+                            <span class="skill-pill bg-gray-100 px-3 py-1 rounded-full text-sm">Flask</span>
+                            <span class="skill-pill bg-gray-100 px-3 py-1 rounded-full text-sm">React</span>
+                            <span class="skill-pill bg-gray-100 px-3 py-1 rounded-full text-sm">Power BI</span>
+                            <span class="skill-pill bg-gray-100 px-3 py-1 rounded-full text-sm">Prompt Engineering</span>
+                            <span class="skill-pill bg-gray-100 px-3 py-1 rounded-full text-sm">AWS</span>
+                            <span class="skill-pill bg-gray-100 px-3 py-1 rounded-full text-sm">SQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-12 text-center section-title">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-r from-blue-500 to-blue-700 flex items-center justify-center">
+                        <i class="fas fa-heartbeat text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Heart Attack Prediction App</h3>
+                        <p class="text-gray-600 mb-4">
+                            A machine learning application that predicts heart attack risk using patient data with Flask backend.
+                        </p>
+                        <a href="https://www.linkedin.com/posts/saicharan-sada_machinelearning-healthcareai-flask-activity-7290238610790850562-kZ67?utm_source=share&utm_medium=member_desktop" 
+                           target="_blank" 
+                           class="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                            View Project <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-r from-purple-500 to-purple-700 flex items-center justify-center">
+                        <i class="fas fa-university text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">College Department Website</h3>
+                        <p class="text-gray-600 mb-4">
+                            A comprehensive website for college departments with admin panel and student management system.
+                        </p>
+                        <a href="https://www.linkedin.com/posts/saicharan-sada_sada-activity-7162173637335134208-JH4R?utm_source=share&utm_medium=member_desktop" 
+                           target="_blank" 
+                           class="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                            View Project <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-r from-green-500 to-green-700 flex items-center justify-center">
+                        <i class="fas fa-temple-buddhist text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Temple Management System</h3>
+                        <p class="text-gray-600 mb-4">
+                            A full-stack application for temple administration with Flask backend and React frontend.
+                        </p>
+                        <a href="https://www.linkedin.com/posts/saicharan-sada_flask-reactjs-vitejs-activity-7327923570897051650-MIMI?utm_source=share&utm_medium=member_desktop" 
+                           target="_blank" 
+                           class="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                            View Project <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-12 text-center section-title">Professional Experience</h2>
+            <div class="space-y-8">
+                <!-- Experience 1 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm card-hover">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <div>
+                            <h3 class="text-xl font-semibold text-blue-600">TATA Forage – Data Visualization</h3>
+                            <p class="text-gray-600">Virtual Internship</p>
+                        </div>
+                        <a href="https://www.linkedin.com/posts/saicharan-sada_data-visualisation-activity-7289909771711717376-3CGs?utm_source=share&utm_medium=member_desktop" 
+                           target="_blank" 
+                           class="mt-4 md:mt-0 inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                            See Certificate/Project <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                    <p class="mt-4 text-gray-700">
+                        Gained hands-on experience in data visualization techniques and tools during this virtual internship program.
+                    </p>
+                </div>
+                
+                <!-- Experience 2 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm card-hover">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <div>
+                            <h3 class="text-xl font-semibold text-blue-600">PWC Forage – Power BI</h3>
+                            <p class="text-gray-600">Virtual Simulation</p>
+                        </div>
+                        <a href="https://lnkd.in/gbwX4CsA" 
+                           target="_blank" 
+                           class="mt-4 md:mt-0 inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                            See Simulation <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                    <p class="mt-4 text-gray-700">
+                        Completed a Power BI virtual experience program focusing on data visualization and business intelligence.
+                    </p>
+                </div>
+                
+                <!-- Experience 3 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm card-hover">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <div>
+                            <h3 class="text-xl font-semibold text-blue-600">AWS Cloud – Braino Vision</h3>
+                            <p class="text-gray-600">Project Experience</p>
+                        </div>
+                        <a href="https://www.linkedin.com/posts/saicharan-sada_sada-activity-7159972360744243200-L6_l?utm_source=share&utm_medium=member_desktop" 
+                           target="_blank" 
+                           class="mt-4 md:mt-0 inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                            View Experience <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                    <p class="mt-4 text-gray-700">
+                        Worked on AWS cloud services implementation for a computer vision project called Braino Vision.
+                    </p>
+                </div>
+                
+                <!-- Experience 4 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm card-hover">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <div>
+                            <h3 class="text-xl font-semibold text-blue-600">Python Fullstack – ExcelR</h3>
+                            <p class="text-gray-600">Training Project</p>
+                        </div>
+                        <a href="https://www.linkedin.com/posts/saicharan-sada_python-full-stack-activity-7225106106279157761-LzqV?utm_source=share&utm_medium=member_desktop" 
+                           target="_blank" 
+                           class="mt-4 md:mt-0 inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                            See Project <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                    <p class="mt-4 text-gray-700">
+                        Developed a full-stack application using Python during professional training at ExcelR.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-12 text-center section-title">Certifications</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Certification 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm card-hover">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-certificate text-blue-500 text-2xl mr-3"></i>
+                        <h3 class="text-lg font-semibold">Data Analytics Basics – edX</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Fundamental concepts of data analytics including data collection, processing, and visualization.
+                    </p>
+                    <a href="https://courses.edx.org/certificates/2be675edaad74e0d88bf7cdde675f054" 
+                       target="_blank" 
+                       class="inline-block text-blue-600 hover:text-blue-800 font-medium">
+                        View Certificate <i class="fas fa-external-link-alt ml-1"></i>
+                    </a>
+                </div>
+                
+                <!-- Certification 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm card-hover">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-certificate text-blue-500 text-2xl mr-3"></i>
+                        <h3 class="text-lg font-semibold">Introduction to Data Science – Cisco</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Comprehensive introduction to data science concepts, tools, and methodologies.
+                    </p>
+                    <a href="https://www.linkedin.com/posts/saicharan-sada_introduction-to-data-science-activity-7286984024617623552-cbTH?utm_source=share&utm_medium=member_desktop" 
+                       target="_blank" 
+                       class="inline-block text-blue-600 hover:text-blue-800 font-medium">
+                        View Post <i class="fas fa-external-link-alt ml-1"></i>
+                    </a>
+                </div>
+                
+                <!-- Certification 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm card-hover">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-certificate text-blue-500 text-2xl mr-3"></i>
+                        <h3 class="text-lg font-semibold">Data Science & Analytics – HP Foundation</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Practical data science skills with focus on real-world applications and industry practices.
+                    </p>
+                    <a href="https://www.linkedin.com/posts/saicharan-sada_data-science-analytics-activity-7172147898120359936-NzPX?utm_source=share&utm_medium=member_desktop" 
+                       target="_blank" 
+                       class="inline-block text-blue-600 hover:text-blue-800 font-medium">
+                        View Post <i class="fas fa-external-link-alt ml-1"></i>
+                    </a>
+                </div>
+                
+                <!-- Certification 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm card-hover">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-certificate text-blue-500 text-2xl mr-3"></i>
+                        <h3 class="text-lg font-semibold">IBM SPSS – IBM</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Certification in data analysis using IBM SPSS software for statistical analysis.
+                    </p>
+                    <a href="https://www.linkedin.com/posts/saicharan-sada_ibm-spss-certification-in-data-analysis-activity-7257259584229122048-IVGu?utm_source=share&utm_medium=member_desktop" 
+                       target="_blank" 
+                       class="inline-block text-blue-600 hover:text-blue-800 font-medium">
+                        View Post <i class="fas fa-external-link-alt ml-1"></i>
+                    </a>
+                </div>
+                
+                <!-- Certification 5 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm card-hover">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-certificate text-blue-500 text-2xl mr-3"></i>
+                        <h3 class="text-lg font-semibold">Prompt Engineering – CognitiveClass.ai</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Specialized training in prompt engineering techniques for AI language models.
+                    </p>
+                    <a href="https://courses.cognitiveclass.ai/certificates/2b2ad35aff164814800f6415da03116c" 
+                       target="_blank" 
+                       class="inline-block text-blue-600 hover:text-blue-800 font-medium">
+                        View Certificate <i class="fas fa-external-link-alt ml-1"></
+</html>
